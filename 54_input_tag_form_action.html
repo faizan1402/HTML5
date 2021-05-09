@@ -1,0 +1,28 @@
+<!-- disabled
+-> The formmethod attribute defines the http method for sending form-data to the action URL.
+
+->The formethod attribute overrids the method attribute of the <form> elment.
+
+->the formmethod attribute can be used with type="submit"and type="image".
+
+->The form-data can be sent as URL variables (method="get") or as an HTTP post transaction (metohd=post).-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input tag</title>
+</head>
+<body>
+
+<form action="server1.html">
+
+	First Name: <input type="text"name="fname"><br><br>
+	 Last Name: <input type="text" name="lname"form="myform"><br><br>
+	<input type="submit" value="SUBMIT">
+	<input type="submit"value="SUBMIT to server2" formaction="server2.html">
+
+</form>
+
+ 
+</body>
+</html>

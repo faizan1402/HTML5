@@ -1,0 +1,54 @@
+<!-- thead,tbody,tfoot basically not any changes the web page but search engine viualise the header,footer, identify.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<style type="text/css">
+	table, th, td{
+			border:1px solid green; border-spacing:0px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+		<tr>
+			<td>S.No.</td>
+			<td>Item</td>
+			<td>Rate</td>
+		</tr>
+	</thead>
+	     <tbody>
+
+		<tr>
+			<td>001</td>
+			<td>Mobile</td>
+			<td rowspan="2">8000</td>
+		</tr>
+
+		<tr>
+			<td>002</td>
+			<td>Charger</td>
+		
+		</tr>
+
+		<tr>
+			<td>003</td>
+			<td>Laptop</td>
+			<td>20000</td>
+		</tr>
+    </tbody>
+        <tfoot>
+		<tr>
+		
+			<td colspan="2">Grand Total</td>
+			<td>28000</td>
+
+		</tr>
+     </tfoot>
+
+     </table>
+
+</body>
+</html>

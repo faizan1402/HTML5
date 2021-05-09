@@ -1,0 +1,45 @@
+<!-- <form>
+-> The <form> tag is used to create an HTML form for user input
+->action the action attribute specifies where to send the form-data when a form is submitted.
+->autocomplete the autocomplete attribute specifies whether a form should have autocomplete on or off.
+->When autocomplete is on,the browser automatically complete values based on values that the user has entered before.
+-> method the method attribute specifies how to send form-data (the form-data is sent to the page specified in the action attribute).
+-> The form-data can be sent as URL variables (with method="get") or as HTTP post transaction
+(with method="post").
+->URL is limited (about 2048 characters) on GET Has no size limitations on POST.
+->so method post direct send to data server side only file name sending not send to data.
+
+-> enctype (spaces are converted to "+" symbols,but no special characters are encoded.in server side is showing
+-> name The name attribute specifies the name of a form.
+->The name attribute is used to reference elements in a javascript ,or to reference form data after a form is submitted. 
+
+-> novalidate attributes when present,it specifies that the form-data (input) should not be validated when submitted.
+->novalidate is basically form is not validate .
+->target the target attribute specifies a name or a keyword that indicates where to display the response that is recieved after submitting the form. 
+-><form target="_blank|_self|_parent|_top|framename">
+	
+->_blank-The response is displayed in a new window or tab
+->_self- The response is displayed in the same frame(this is default)
+->_parent-The response is displayed in the parent frame
+->_top-The response is displayed in the full body of the window
+->framename-The response is displayed in a named iframe.-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+	<!-- action attributes one page to another page moving -->
+	<form action="thanks.html" method="post" name="login-form">
+
+	First Name:<input type="text" name="fname"><br><br>
+	Last Name:<input type="text" name="lname"><br><br>
+	<input type="submit" value="submit">
+
+    </form>
+
+
+</body>
+</html>
